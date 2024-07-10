@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+    #ROOTNAMESPACEBEGIN#
+public class #SCRIPTNAME# : MonoBehaviour
+{
+	void Start()
+    {
+		GetVisualElements();
+    }
+	
+	void OnEnable()
+	{            
+		GetVisualElements();
+		
+		AssignButtons();
+	}
+
+	void OnDisable()
+	{
+		UnAssignButtons();
+	}
+
+    private void GetVisualElements()
+	{
+		VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+		
+		/*var name = root.Q<Type>("element-name");*/
+	}
+	
+	private void AssignButtons()
+	{
+		/*buttonName.clicked += MethodName;*/
+	}
+	
+	private void UnAssignButtons()
+	{
+		/*buttonName.clicked -= MethodName;*/
+	}
+}
+#ROOTNAMESPACEEND#
